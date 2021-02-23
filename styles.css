@@ -1,3 +1,12 @@
+html, body {
+    /* vh = viewport height / window height */
+    min-height: 100vh;
+}
 body {
     background-color: rgb(129, 241, 144);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.logo {
+    width: 100px;
 }
