@@ -6,7 +6,53 @@ body {
     background-color: rgb(129, 241, 144);
     display: grid;
     grid-template-rows: auto 1fr auto;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 .logo {
     width: 100px;
+    transition: transform 1s;
+}
+.logo:hover {
+    transform: rotate(90deg);
+}
+.main-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:#035422;
+}
+.main-navigation {
+    justify-self: end;
+    align-self: end;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+}
+.main-navigation a {
+    color: #ffffff;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+/* :hover is a pseudo class */
+.main-navigation a:hover {
+    background-color: #314e3c;
+}
+.content {
+    margin: auto 50px;
+}
+.banner {
+    min-height: 70vh;
+    background-color: #05e35a;
+    display: grid;
+    place-items: center;
+    background-image: url('images/luca-bravo-ESkw2ayO2As-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.banner h1 {
+    font-size: 3.2em;
+    color: white;
+    text-shadow:0px 0px 2px black;
+    background-color:rgba(0,0,0,0.5);
+    padding: 5px;
 }
